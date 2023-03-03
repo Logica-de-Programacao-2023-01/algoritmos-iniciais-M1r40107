@@ -1,0 +1,14 @@
+1: Solicitar o ingresso ao cliente
+2: Conferir data/hora do filme
+SE data/hora > data/hora do filme + 30 min Então
+3: Informar ao cliente que o tempo limite foi execdido
+4: Não permitir a entrada
+Senão Se data/hora atual < data/hora do filme - 30 min
+Então 
+5: Informar ao cliente que a sala de cinema ainda não abriu
+6: Não permitir a entrada
+Senão
+7: Permitir a entrada
+8: Indicar a sala de cinema correta ao cliente
+FIM - SE
+Fim
